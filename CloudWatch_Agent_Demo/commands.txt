@@ -19,6 +19,11 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 6. Generate some activity on our system by installing stress - it’s in the Extra Packages for Enterprise Linux (EPEL) repository, so first we'll install the epel repository, then we'll install stress:
 
-sudo amazon-linux-extras install epel -y
-sudo yum install stress -y
-stress --cpu 1
+`sudo amazon-linux-extras install epel -y`
+
+_If amazon-linux-extras command cannot be found, you can wget epel from redhat's site and the use rpm to get it on to the system_
+
+`sudo yum install stress -y`
+
+
+`stress --cpu 1`
