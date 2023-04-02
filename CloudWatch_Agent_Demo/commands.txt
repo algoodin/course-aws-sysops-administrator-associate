@@ -65,6 +65,19 @@ To manually pull the epel repo, do the following:
    stress --cpu 1
 
 
+# Observe metrics in CloudWatch
+
+To see default metrics
+Cloudwatch > Metrics > All metrics > EC2 Per-Instance Metrics > copy instance ID into filter > Select all metrics to view in graph
+
+To see os-level metrics from agent
+All > CWAgent > InstanceId > select all metrics and view in graph
+
+To view logs
+Logs > Log groups > journal > log streams > select instance ID
+messages was replaced by syslog which was replaced by journal
+
+
 More documentation
 
 https://linux.how2shout.com/how-to-install-stress-or-stress-ng-on-aws-amazon-linux-2/
